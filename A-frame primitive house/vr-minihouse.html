@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>VR: A-Sky using Equirectangular Image</title>
+    <script src="./js/aframe/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-assets>
+        <img id="roof" src="image/roof2.jpg">
+        <img id="wall" src="image/wall.jpg">
+        <img id="grass" src="image/grass.png">
+    </a-assets>
+      
+    <a-scene>
+        <a-cylinder src="#wall" position="0 0 -20" height="7" radius="4" rotation="0 190 0"></a-cyclinder>
+        <a-cone src="#roof" position="0 5 0" height="5.5" radius-bottom="5.5" radius-top="1"></a-cone>
+        <a-plane src="#grass" position="0 -4 -4" width="20" height="20" rotation="-90 0 0"></a-plane>
+
+        <a-sky src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fsechelt.jpg?1490307995926" radius="30"></a-sky>
+    </a-scene>
+    
+</body>
+
+</html>
